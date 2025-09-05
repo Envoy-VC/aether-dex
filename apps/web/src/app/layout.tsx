@@ -9,6 +9,14 @@ import "../styles/globals.css";
 
 const satoshiFont = localFont({
   src: "../../public/fonts/satoshi.ttf",
+  variable: "--font-sans",
+});
+
+import { Instrument_Serif } from "next/font/google";
+
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-instrument-serif",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -19,7 +27,10 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
-    <html className={satoshiFont.className} lang="en">
+    <html
+      className={`${satoshiFont.variable} ${instrumentSerif.variable} antialiased`}
+      lang="en"
+    >
       <body>
         <TRPCReactProvider>{children}</TRPCReactProvider>
       </body>

@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+:root {
+  --background: oklch(10.752% 0.05061 291.527);
+  --foreground: oklch(100% 0.00011 271.152);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: var(--font-sans);
+  --font-instrument: var(--font-instrument-serif);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
