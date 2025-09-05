@@ -1,20 +1,54 @@
 @import "tailwindcss";
 
 :root {
-  --background: oklch(10.752% 0.05061 291.527);
-  --foreground: oklch(100% 0.00011 271.152);
+  --background: #050114;
+  --foreground: #ffffff;
+
+  --primary: #bb3eff;
+  --secondary: #fb9b00;
+
+  --border: #997740;
+
+  --card: #110c2a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+
+  --color-border: var(--border);
+
+  --color-card: var(--card);
+
   --font-sans: var(--font-sans);
   --font-instrument: var(--font-instrument-serif);
+  --font-geist: var(--font-geist);
+  --font-geist-mono: var(--font-geist-mono);
 }
 
 @layer base {
-  body {
-    @apply bg-background text-foreground;
+  * {
+    @apply border-border;
   }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+.btn-gradient {
+  background: linear-gradient(to top right, #5c14af, #fb9b00);
+}
+
+.gradient-wrapper {
+  display: inline-block;
+  background: linear-gradient(
+    135deg,
+    #747474 0%,
+    #17171700 5%,
+    #17171700 95%,
+    #747474 100%
+  );
 }
