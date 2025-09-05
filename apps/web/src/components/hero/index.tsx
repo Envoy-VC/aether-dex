@@ -3,6 +3,7 @@ import Image from "next/image";
 import { MoveRightIcon, ZapIcon } from "lucide-react";
 import BotIcon from "public/assets/bot.svg";
 import ChainIcon from "public/assets/chain.svg";
+import Flare from "public/assets/flare.svg";
 import Logo from "public/assets/logo.svg";
 import PackageIcon from "public/assets/package-icon.svg";
 import Stars from "public/assets/stars.svg";
@@ -16,6 +17,23 @@ export const Hero = () => {
         backgroundImage: "url('/assets/hero-bg.svg')",
       }}
     >
+      <Image
+        alt="Flare"
+        className="absolute top-0 left-0 size-[32rem]"
+        height={200}
+        src={Flare}
+        width={200}
+      />
+      <Image
+        alt="Flare"
+        className="absolute top-0 right-0 size-[32rem]"
+        height={200}
+        src={Flare}
+        style={{
+          transform: "rotateY(180deg)",
+        }}
+        width={200}
+      />
       <div className="absolute top-[10%] w-full border-white/20 border-b" />
       <div className="absolute top-[10%] left-[20%] h-[calc(100%-2px)] translate-y-[1px] border-white/20 border-r" />
       <div className="absolute top-[10%] right-[20%] h-[calc(100%-2px)] translate-y-[1px] border-white/20 border-r" />

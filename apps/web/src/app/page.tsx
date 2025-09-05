@@ -19,8 +19,6 @@ const Home = () => {
         src={DividerGrid}
         width={100}
       />
-
-      <div className="h-screen"></div>
     </div>
   );
 };

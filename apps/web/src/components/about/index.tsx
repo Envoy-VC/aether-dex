@@ -177,7 +177,7 @@ export const About = () => {
         <div className="mx-auto flex w-full max-w-screen-md flex-row items-center justify-between font-medium">
           <div>Currently in development</div>
           <ArrowRightIcon className="text-secondary" />
-          <div>Currently in development</div>
+          <div>Contact us for Updates</div>
         </div>
       </div>
     </div>
