@@ -65,7 +65,7 @@ export const Navbar = ({ className }: { className?: string }) => {
           opacity: visible ? 1 : 0,
           y: visible ? 0 : -100,
         }}
-        className="gradient-wrapper fixed inset-x-0 top-8 z-[5000] mx-auto w-full max-w-[64rem] p-[1px]"
+        className="gradient-wrapper fixed inset-x-0 top-6 z-[5000] mx-auto w-full max-w-4xl p-[1px]"
         initial={{
           opacity: 1,
           y: -100,
@@ -76,13 +76,13 @@ export const Navbar = ({ className }: { className?: string }) => {
       >
         <div
           className={cn(
-            "flex flex-row items-center justify-between gap-5 bg-card px-6 py-4 backdrop-blur-[12px]",
+            "flex flex-row items-center justify-between gap-5 bg-card px-4 py-2 backdrop-blur-[12px]",
             className,
           )}
         >
           <Image
             alt="Logo"
-            className="w-[10rem]"
+            className="w-[8rem]"
             height={100}
             src={LogoText}
             width={100}

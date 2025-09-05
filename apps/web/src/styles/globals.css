@@ -7,6 +7,8 @@
   --primary: #bb3eff;
   --secondary: #fb9b00;
 
+  --accent: #dbb1ff;
+
   --border: #997740;
 
   --card: #110c2a;
@@ -18,6 +20,8 @@
 
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+
+  --color-accent: var(--accent);
 
   --color-border: var(--border);
 
