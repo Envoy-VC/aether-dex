@@ -1,11 +1,5 @@
-import { Button } from "@repo/ui/components/button";
-
 const Home = () => {
-  return (
-    <div>
-      <Button variant="default">Hello World</Button>
-    </div>
-  );
+  return <div className="text-4xl">hello world</div>;
 };
 
 export default Home;
