@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Geist_Mono, Instrument_Serif } from "next/font/google";
 import localFont from "next/font/local";
 
 import type { ReactNode } from "react";
@@ -12,16 +13,9 @@ const satoshiFont = localFont({
   variable: "--font-sans",
 });
 
-import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
-
 const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument-serif",
   weight: "400",
-});
-
-const geist = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist",
 });
 
 const geistMono = Geist_Mono({
@@ -38,7 +32,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <html
-      className={`${satoshiFont.variable} ${instrumentSerif.variable} ${geist.variable} ${geistMono.variable} antialiased`}
+      className={`${satoshiFont.variable} ${instrumentSerif.variable} ${geistMono.variable} antialiased`}
       lang="en"
     >
       <body className="relative">

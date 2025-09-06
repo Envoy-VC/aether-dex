@@ -2,7 +2,6 @@
 
 :root {
   --background: #050114;
-  /* --background: #fff; */
   --foreground: #ffffff;
 
   --primary: #bb3eff;
@@ -34,7 +33,6 @@
 
   --font-sans: var(--font-sans);
   --font-instrument: var(--font-instrument-serif);
-  --font-geist: var(--font-geist);
   --font-geist-mono: var(--font-geist-mono);
 }
 
