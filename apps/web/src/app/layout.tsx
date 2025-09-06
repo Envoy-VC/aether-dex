@@ -14,6 +14,7 @@ const satoshiFont = localFont({
 });
 
 const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
   variable: "--font-instrument-serif",
   weight: "400",
 });
