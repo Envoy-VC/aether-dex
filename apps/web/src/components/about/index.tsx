@@ -14,14 +14,14 @@ export const About = () => {
       <div className="absolute top-0 right-[5%] size-3 border-secondary border-t border-r"></div>
       <Image
         alt="Blur Primary"
-        className="absolute top-0 right-0 size-[48rem]"
+        className="absolute top-0 right-[5%] size-[48rem]"
         height={200}
         src={BlurPrimary}
         width={200}
       />
       <Image
         alt="Blur Secondary"
-        className="absolute bottom-0 left-0 size-[48rem]"
+        className="absolute bottom-0 left-[5%] size-[48rem]"
         height={200}
         src={BlurSecondary}
         width={200}
@@ -33,8 +33,8 @@ export const About = () => {
         src={AboutDivider}
         width={100}
       />
-      <StarsThinIcon className="-translate-y-1/2 absolute top-0 right-[20%] translate-x-1/2" />
-      <StarsThinIcon className="-translate-y-1/2 -translate-x-1/2 absolute top-0 left-[20%]" />
+      <StarsThinIcon className="-translate-y-1/2 absolute top-0 right-[20%] hidden translate-x-1/2 sm:block" />
+      <StarsThinIcon className="-translate-y-1/2 -translate-x-1/2 absolute top-0 left-[20%] hidden sm:block" />
 
       <div className="relative mx-auto flex w-[90%] flex-col items-center gap-6 border-white/20 border-b pb-4 md:flex-row">
         <div className="absolute bottom-0 left-0 size-3 border-secondary border-b border-l"></div>
@@ -49,9 +49,7 @@ export const About = () => {
             </div>
             <div className="flex flex-col font-sans font-semibold text-3xl sm:text-4xl md:text-7xl">
               <div>What is </div>
-              <div className="bg-gradient-to-r from-[#5C14AF] to-[#fb9b00b0] bg-clip-text text-transparent">
-                AetherDEX
-              </div>
+              <div className="about-text-gradient">AetherDEX</div>
             </div>
             <div className="font-geist-mono text-base">
               Built for the Next Generation of Traders
