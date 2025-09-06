@@ -6,6 +6,7 @@ import ChainIcon from "public/assets/chain.svg";
 import Logo from "public/assets/logo.png";
 import PackageIcon from "public/assets/package-icon.svg";
 
+import { Flare } from "./flare";
 import { AbsoluteImages } from "./images";
 import { Lines } from "./lines";
 
@@ -14,6 +15,7 @@ export const Hero = () => {
     <div className="relative flex min-h-screen w-full flex-col justify-center gap-8 sm:overflow-hidden">
       <Lines />
       <AbsoluteImages />
+      <Flare />
       <div className="mx-auto flex max-w-[90%] translate-y-[12dvh] flex-col items-center justify-center gap-8 sm:translate-y-0">
         <div className="z-[3] mx-auto flex flex-col items-center justify-center gap-4">
           <Image
