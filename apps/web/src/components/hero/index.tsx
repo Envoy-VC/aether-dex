@@ -85,7 +85,7 @@ export const Hero = () => {
         <div className="mx-auto flex w-full max-w-xl flex-col items-center justify-between gap-6 px-4 sm:flex-row">
           <div className="relative w-full">
             <button
-              className="btn-gradient flex h-12 w-full cursor-pointer flex-row items-center justify-center gap-4 border border-border px-4 font-geist-mono font-semibold"
+              className="btn-gradient flex h-16 w-full cursor-pointer flex-row items-center justify-center gap-4 border border-border px-4 font-geist-mono font-semibold"
               type="button"
             >
               Discover AetherDEX
@@ -98,7 +98,7 @@ export const Hero = () => {
           </div>
           <div className="relative w-full">
             <button
-              className="flex h-12 w-full cursor-pointer flex-row items-center justify-center gap-4 border border-primary px-4 font-geist-mono font-semibold"
+              className="flex h-16 w-full cursor-pointer flex-row items-center justify-center gap-4 border border-primary px-4 font-geist-mono font-semibold"
               type="button"
             >
               See How it works
