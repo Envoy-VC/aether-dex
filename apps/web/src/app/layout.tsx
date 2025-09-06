@@ -40,7 +40,7 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
         <div
           className="pointer-events-none fixed inset-0 z-50 bg-repeat"
           style={{
-            background: "url('/assets/grain.svg')",
+            background: "url('/assets/grain.png')",
           }}
         />
         <TRPCReactProvider>
