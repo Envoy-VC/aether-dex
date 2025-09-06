@@ -8,6 +8,8 @@ import { TRPCReactProvider } from "@/trpc/react";
 
 import "../styles/globals.css";
 
+import { SmoothScroll } from "@/components";
+
 const satoshiFont = localFont({
   src: "../../public/fonts/satoshi.ttf",
   variable: "--font-sans",
@@ -36,17 +38,19 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
       className={`${satoshiFont.variable} ${instrumentSerif.variable} ${geistMono.variable} antialiased`}
       lang="en"
     >
-      <body className="relative">
-        <div
-          className="pointer-events-none fixed inset-0 z-50 bg-repeat"
-          style={{
-            background: "url('/assets/grain.png')",
-          }}
-        />
-        <TRPCReactProvider>
-          <div className="relative z-[0]">{children}</div>
-        </TRPCReactProvider>
-      </body>
+      <SmoothScroll>
+        <body className="relative">
+          <div
+            className="pointer-events-none fixed inset-0 z-50 bg-repeat"
+            style={{
+              background: "url('/assets/grain.png')",
+            }}
+          />
+          <TRPCReactProvider>
+            <div className="relative z-[0]">{children}</div>
+          </TRPCReactProvider>
+        </body>
+      </SmoothScroll>
     </html>
   );
 };

@@ -6,7 +6,7 @@ import { Tagline } from "./tagline";
 
 export const About = () => {
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <Lines />
       <AbsoluteImages />
 

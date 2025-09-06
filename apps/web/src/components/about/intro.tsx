@@ -1,3 +1,6 @@
+import { AnimatedQuote } from "../animate-quote";
+import { TextAnimate } from "../text-animate";
+
 export const Intro = () => {
   return (
     <div className="relative mx-auto flex w-[90%] flex-col items-center gap-6 border-white/20 border-b pb-4 sm:pb-0 md:flex-row">
@@ -12,8 +15,8 @@ export const Intro = () => {
             </div>
           </div>
           <div className="flex flex-col font-sans font-semibold text-3xl sm:text-4xl md:text-7xl">
-            <div>What is </div>
-            <div className="about-text-gradient">AetherDEX</div>
+            <AnimatedQuote text="What is" />
+            <AnimatedQuote className="about-text-gradient" text="Aether DEX" />
           </div>
           <div className="font-geist-mono text-base">
             Built for the Next Generation of Traders
@@ -24,12 +27,18 @@ export const Intro = () => {
       <div className="flex basis-3/5 py-4">
         <div className="mx-auto flex w-full max-w-xl flex-col justify-center gap-4 px-4 sm:px-0">
           <div className="font-semibold text-2xl">DeFi has a problem!</div>
-          <div className="font-geist-mono text-muted-foreground text-sm sm:text-base">
+          <TextAnimate
+            animation="fadeIn"
+            as="p"
+            by="word"
+            className="font-geist-mono text-muted-foreground text-sm sm:text-base"
+            delay={0.35}
+          >
             Fragmented liquidity, high costs, and little attention to privacy.
             AetherDEX solves these challenges by combining cross-chain swaps,
             advanced privacy protection, and AI-powered trade optimization into
             one seamless platform.
-          </div>
+          </TextAnimate>
           <div className="flex flex-row flex-wrap items-center justify-between gap-2 font-geist-mono text-primary">
             <div className="border border-primary px-4 py-2">
               Fragmented Liquidity
