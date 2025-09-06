@@ -1,8 +1,5 @@
-import Image from "next/image";
-
-import DividerGrid from "public/assets/divider-grid.svg";
-
 import { About, Hero, MobileNavbar, Navbar } from "@/components";
+import { DividerGrid } from "@/components/icons";
 
 const Home = () => {
   return (
@@ -13,13 +10,7 @@ const Home = () => {
       <MobileNavbar />
       <Hero />
       <About />
-      <Image
-        alt="Divider Grid"
-        className="h-20 w-screen object-cover md:h-full"
-        height={300}
-        src={DividerGrid}
-        width={600}
-      />
+      <DividerGrid />
     </div>
   );
 };
