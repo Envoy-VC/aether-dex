@@ -3,55 +3,17 @@ import Image from "next/image";
 import { MoveRightIcon, ZapIcon } from "lucide-react";
 import BotIcon from "public/assets/bot.svg";
 import ChainIcon from "public/assets/chain.svg";
-import Flare from "public/assets/flare.svg";
-import Logo from "public/assets/logo.svg";
+import Logo from "public/assets/logo.png";
 import PackageIcon from "public/assets/package-icon.svg";
-import Stars from "public/assets/stars.svg";
 
-import { StarsThinIcon } from "../icons";
+import { AbsoluteImages } from "./images";
+import { Lines } from "./lines";
 
 export const Hero = () => {
   return (
-    <div
-      className="relative flex min-h-screen w-full flex-col justify-center gap-8 sm:overflow-hidden"
-      style={{
-        backgroundImage: "url('/assets/hero-bg.svg')",
-      }}
-    >
-      <Image
-        alt="Flare"
-        className="absolute top-0 left-0 size-[32rem]"
-        height={200}
-        src={Flare}
-        width={200}
-      />
-      <Image
-        alt="Flare"
-        className="absolute top-0 right-0 size-[32rem]"
-        height={200}
-        src={Flare}
-        style={{
-          transform: "rotateY(180deg)",
-        }}
-        width={200}
-      />
-      <div className="absolute top-[10dvh] w-full border-white/20 border-b" />
-
-      <div className="absolute top-[10%] left-[20%] hidden h-[calc(100%-2px)] translate-y-[1px] border-white/20 border-r sm:block" />
-      <div className="absolute top-[10%] right-[20%] hidden h-[calc(100%-2px)] translate-y-[1px] border-white/20 border-r sm:block" />
-      <div className="absolute top-[10%] left-[12.5%] hidden h-[calc(100%-2px)] w-[1px] translate-y-[1px] [background:repeating-linear-gradient(to_bottom,rgba(255,255,255,0.2)_0_8px,transparent_8px_16px)] sm:block" />
-      <div className="absolute top-[10%] right-[12.5%] hidden h-[calc(100%-2px)] w-[1px] translate-y-[1px] [background:repeating-linear-gradient(to_bottom,rgba(255,255,255,0.2)_0_8px,transparent_8px_16px)] sm:block" />
-
-      <StarsThinIcon className="-translate-y-1/2 absolute top-[10dvh] right-[5%] translate-x-1/2" />
-      <StarsThinIcon className="-translate-y-1/2 -translate-x-1/2 absolute top-[10dvh] left-[5%]" />
-      <Image
-        alt="Stars"
-        className="absolute top-0 right-1/2 translate-x-1/2"
-        height={705}
-        src={Stars}
-        width={685}
-      />
-
+    <div className="relative flex min-h-screen w-full flex-col justify-center gap-8 sm:overflow-hidden">
+      <Lines />
+      <AbsoluteImages />
       <div className="mx-auto flex max-w-[90%] translate-y-[12dvh] flex-col items-center justify-center gap-8 sm:translate-y-0">
         <div className="z-[3] mx-auto flex flex-col items-center justify-center gap-4">
           <Image
