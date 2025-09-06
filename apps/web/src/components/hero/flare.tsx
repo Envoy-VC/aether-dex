@@ -10,8 +10,8 @@ const flareVariants = (direction: "right" | "left"): Variants => ({
     y: 0,
   },
   initial: {
-    x: direction === "left" ? -200 : 200,
-    y: -400,
+    x: direction === "left" ? "-100%" : "100%",
+    y: "-100%",
   },
 });
 
