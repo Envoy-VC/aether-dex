@@ -11,7 +11,7 @@ export const HamburgerMenuContent = ({ isOpen }: { isOpen: boolean }) => {
   return (
     <motion.div
       animate={isOpen ? "open" : "closed"}
-      className="fixed inset-0 top-0 right-0 z-[2] max-h-screen min-h-screen w-screen bg-card"
+      className="fixed inset-0 top-0 right-0 z-[2] max-h-screen min-h-screen w-screen bg-background"
       initial="closed"
       transition={{
         duration: 0.2,
