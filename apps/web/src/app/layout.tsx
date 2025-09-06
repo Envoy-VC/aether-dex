@@ -41,8 +41,16 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
       className={`${satoshiFont.variable} ${instrumentSerif.variable} ${geist.variable} ${geistMono.variable} antialiased`}
       lang="en"
     >
-      <body>
-        <TRPCReactProvider>{children}</TRPCReactProvider>
+      <body className="relative">
+        <div
+          className="pointer-events-none fixed inset-0 z-50 bg-repeat"
+          style={{
+            background: "url('/assets/grain.svg')",
+          }}
+        />
+        <TRPCReactProvider>
+          <div className="relative z-[0]">{children}</div>
+        </TRPCReactProvider>
       </body>
     </html>
   );
